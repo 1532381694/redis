@@ -38,3 +38,4 @@ scan 0 match name*
 
 //scan 和keys的区别
 使用keys 时会阻塞io主线程 ，而scan 不会阻塞主线程
+keys 是一次性返回,scan是多次返回，scan 扫描出来的数据有可能重复，需要业务逻辑去重
