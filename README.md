@@ -12,11 +12,29 @@ hgetall tablename
 hget table [key]
 
  List
+ 
+ lpush [listname] [value]
+ lrange [listname] [i] [k]
+ lpol [listname]
  list 包括 ziplist 、linkedlist
  linkedlist 占用的内存比ziplist多，所以当创建新的列表时，会优先选择ziplist,当一下条件发生时，ziplist -> linkedlist
  1. 向列表中添加一个值时,当值的长度大于64
  2. ziplist的节点长度大于512
+ 
+ 
+ 最开始的数据li
 
 Set
 
 Sorted Set
+
+
+//查看所有key
+keys *
+//查看特定开头的key
+keys name*
+//scan
+scan 0 match name*
+
+//scan 和keys的区别
+使用keys 时会阻塞io主线程 ，而scan 不会阻塞主线程
