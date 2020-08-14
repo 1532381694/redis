@@ -1,6 +1,6 @@
   # Redis 学习记录 
   ## Redis 五中数据结构 
-  //String  
+  1. String  
 
   操作指令  
 
@@ -15,8 +15,8 @@
   hgetall tablename \<br>
   hget table [key] \<br>
 
- List
- 
+ 2. List  
+
  lpush [listname] [value]
  lrange [listname] [i] [k]
  lpol [listname]
@@ -28,9 +28,9 @@
  
  最开始的数据li
 
-Set
+3. Set
 
-Sorted Set
+4. Sorted Set
 
 
 //查看所有key
