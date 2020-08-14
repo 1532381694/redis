@@ -1,15 +1,15 @@
-Redis 学习记录
-Redis 五中数据结构
-//String
-操作指令
-set [key] [value]
-get [key] [value]
+Redis 学习记录 \<br>
+Redis 五中数据结构 \<br>
+//String \<br> 
+操作指令 \<br>
+set [key] [value] \<br>
+get [key] [value] \<br>
 
-Hash Table(Map)
-hset tablename [key] [vale]
-hset tablename [key2] [value2]
-hgetall tablename
-hget table [key]
+Hash Table(Map)\<br>
+hset tablename [key] [vale] \<br>
+hset tablename [key2] [value2] \<br>
+hgetall tablename \<br>
+hget table [key] \<br>
 
  List
  
