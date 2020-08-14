@@ -2,8 +2,8 @@
   ## Redis 五中数据结构 
   //String
   操作指令 
-  set [key] [value] \<br>
-  get [key] [value] \<br>
+  set [key] [value] 
+  get [key] [value] 
 
   Hash Table(Map)
   hset tablename [key] [vale] 
