@@ -16,10 +16,13 @@
   hget table [key] \<br>
 
  **2. List**  
-
+  //指令：
  lpush [listname] [value]
  lrange [listname] [i] [k]
  lpol [listname]
+ //list 为空时，blpop取数据会阻塞，知道list 有数据或者超时时  
+ 
+ blpop [listname] [timeout] 
  list 包括 ziplist 、linkedlist
  linkedlist 占用的内存比ziplist多，所以当创建新的列表时，会优先选择ziplist,当一下条件发生时，ziplist -> linkedlist
  1. 向列表中添加一个值时,当值的长度大于64
